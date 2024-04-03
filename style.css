@@ -1,0 +1,115 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(70deg, blue, black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+}
+
+h1 {
+    font-size: 40px;
+    color: black;
+}
+
+span {
+    color: rgba(255, 255, 255, 0.673);
+}
+
+textarea {
+    background-color: rgba(0, 0, 0, 0.621);
+    color:white;
+    width: 430px;
+    height: 250px;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+textarea::placeholder {
+    text-align: starts;
+    font-size: 15px;
+    padding: 4px 0 0 4px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+
+.row select {
+    width: 350px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding-left: 20px;
+}
+
+.row button {
+    font-size: 17px;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    gap: 5px;
+    padding: 5px 0 0 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+.row button:active{
+     color:red;
+}
+
+.row button img {
+    height: 15px;
+    width: 15px;
+    padding-top: 2px;
+}
+
+@media only screen and (max-width:500px) {
+    h1 {
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+
+    span {
+        color: black;
+    }
+
+    textarea {
+        width: 270px;
+        height: 200px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .row select {
+        width: 220px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+    .row button {
+        font-size: 15px;
+        width: 80px;
+        padding-top: 7px;
+    }
+
+}
