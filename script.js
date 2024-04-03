@@ -16,7 +16,7 @@ let voiceselect = document.querySelector("select");
 
 window.speechSynthesis.onvoiceschanged = ()=>{
     voices = window.speechSynthesis.getVoices();    
-    speech.voice= voices[-1];
+    speech.voice= voices[0];
    
     //to add options for select tag
     voices.forEach((voice,i) =>(voiceselect.options[i] = new Option(voice.name, i)));
